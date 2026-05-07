@@ -1,0 +1,253 @@
+/* style.css */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#111;
+  color:white;
+}
+
+header{
+  background:black;
+  padding:20px 50px;
+  position:sticky;
+  top:0;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  color:red;
+  font-size:32px;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+}
+
+nav ul li{
+  margin-left:20px;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+nav ul li a:hover{
+  color:red;
+}
+
+.hero{
+  height:90vh;
+  background:url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1600&auto=format&fit=crop') center/cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero-content h2{
+  font-size:60px;
+}
+
+.hero-content p{
+  margin:20px 0;
+  font-size:24px;
+}
+
+.btn{
+  background:red;
+  color:white;
+  padding:12px 25px;
+  text-decoration:none;
+  border-radius:5px;
+}
+
+section{
+  padding:80px 10%;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:40px;
+  color:red;
+}
+
+.about p{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.features{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.card{
+  background:#222;
+  padding:40px;
+  width:250px;
+  text-align:center;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.plan-container{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.plan-card{
+  background:#222;
+  padding:30px;
+  width:300px;
+  border-radius:10px;
+  text-align:center;
+}
+
+.plan-card h1{
+  margin:20px 0;
+  color:red;
+}
+
+.plan-card ul{
+  list-style:none;
+  margin:20px 0;
+}
+
+.plan-card ul li{
+  margin:10px 0;
+}
+
+.plan-card button{
+  background:red;
+  color:white;
+  border:none;
+  padding:10px 20px;
+  cursor:pointer;
+  border-radius:5px;
+}
+
+.premium{
+  border:2px solid red;
+}
+
+.trainer-container{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.trainer-card{
+  background:#222;
+  border-radius:10px;
+  overflow:hidden;
+  width:300px;
+  text-align:center;
+}
+
+.trainer-card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+}
+
+.trainer-card h3{
+  margin:15px 0 10px;
+}
+
+table{
+  width:70%;
+  margin:auto;
+  border-collapse:collapse;
+}
+
+table, th, td{
+  border:1px solid white;
+}
+
+th, td{
+  padding:15px;
+  text-align:center;
+}
+
+th{
+  background:red;
+}
+
+.contact form{
+  width:60%;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+}
+
+.contact input,
+.contact textarea{
+  padding:15px;
+  margin:10px 0;
+  border:none;
+  border-radius:5px;
+}
+
+.contact button{
+  padding:15px;
+  border:none;
+  background:red;
+  color:white;
+  cursor:pointer;
+  border-radius:5px;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:black;
+}
+
+@media(max-width:768px){
+
+  nav{
+    flex-direction:column;
+  }
+
+  nav ul{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .hero-content h2{
+    font-size:40px;
+  }
+
+  table{
+    width:100%;
+  }
+
+  .contact form{
+    width:100%;
+  }
+}
